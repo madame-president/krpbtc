@@ -1,35 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kingston Ross & Pasnak BTC</title>
+    <title>Kingston Ross & Pasnak's Open Bitcoin</title>
     <link rel="stylesheet" href="./styles.css">
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-    <section id="about-me">
+    <section id="about">
         <nav>
-            <div class="personal__logo">KRP <strong>BTC</strong></div>
+            <div class="logo">KRP BTC</div>
             <ul class="nav__link--list">
-                <li>
-                    <a href="#languages" class="
+                <li class="nav__link">
+                    <a href="#documentation" class="
                     nav__link--anchor
                     link__hover-effect
                     link__hover-effect--black
-                    ">Blockchains</a>
+                    ">About</a>
                 </li>
-                <li>
-                    <a href="#projects" class="
+                <li class="nav__link">
+                    <a href="#download" class="
                     nav__link--anchor
                     link__hover-effect
                     link__hover-effect--black
-                    ">Features</a>
+                    ">Download</a>
                 </li>
-                <li>
+                <li class="nav__link">
                     <a href="mailto:nescobar@krpgroup.com" class="
                     nav__link--anchor
                     nav__link--anchor-primary
@@ -38,255 +36,147 @@
             </ul>
         </nav>
         <div class="flex flex-1">
-            <div class="about-me__info row">
-                <div class="about-me__info--container">
-                    <figure class="about-me__picture--mask">
-                        <img src="./assets/btc-logo-purple.png"
-                            class="about-me__picture" alt="Bitcoin Img">
+            <div class="about__info row">
+                <div class="about__info--container">
+                    <figure class="about__picture--mask">
+                        <img src="./assets/btc-logo-purple.png" class="about__picture" alt="Bitcoin Logo">
                     </figure>
-                    <h1 class="about-me__info--title">
-                        Developing for <span class="text--purple">Excel</span>
+                    <h1 class="about__info--title">
+                        Open Bitcoin for <span class="text--purple">Excel</span>
                     </h1>
-                    <p class="about-me__info--para">
-                        Detailed wallet information about prices, transactions, and blockchain confirmations integrated into excel for <strong>Kingston Ross & Pasnak.</strong>
+                    <p class="about__info--para">
+                        An <strong class="text--purple">open-source</strong> program that provides detailed wallet information about prices, transactions, and blockchain confirmations more directly into excel developed for <strong class="text--purple">accounting professionals</strong>.
                     </p>
+                    <div class="about__links">
+                        <a href="./assets/KRP Digital Assets.pdf" target="_blank" class="about__link">
+                            <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
                 </div>
-                <div>
-                    <figure class="about-me__img--container">
-                        <img src="./assets/web-dev.png"
-                            class="about-me__img" alt="">
+                <figure class="about__image--container">
+                    <img src="./assets/svg-spreadsheet.svg" class="about__image" alt="">
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section id="documentation">
+       <div class="container">
+        <div class="row">
+            <h1 class="section__title">The safest way to explore the <span class="text--purple">bitcoin blockchain</span></h1>
+            <div class="features__list">
+                <div class="feature">
+                    <figure class="feature__icon--wrapper">
+                        <img src="./assets/buffer-brands.svg" class="feature__icon" alt="">
                     </figure>
+                    <span class="feature__name">No third-parties</span>
+                </div>
+                <div class="feature">
+                    <figure class="feature__icon--wrapper">
+                        <img src="./assets/code-solid.svg" class="feature__icon" alt="">
+                    </figure>
+                    <span class="feature__name">Open-source</span>
+                </div>
+                <div class="feature">
+                    <figure class="feature__icon--wrapper">
+                        <img src="./assets/check-double-solid.svg" class="feature__icon" alt="">
+                    </figure>
+                    <span class="feature__name">Verify transactions</span>
+                </div>
+                <div class="feature">
+                    <figure class="feature__icon--wrapper">
+                        <img src="./assets/computer-solid.svg" class="feature__icon" alt="">
+                    </figure>
+                    <span class="feature__name">KRP's full node</span>
+                </div>
+                <div class="feature">
+                    <figure class="feature__icon--wrapper">
+                        <img src="./assets/file-excel-solid.svg" class="feature__icon" alt="">
+                    </figure>
+                    <span class="feature__name">Excel integrated</span>
+                </div>
+                <div class="feature">
+                    <figure class="feature__icon--wrapper">
+                        <img src="./assets/table-columns-solid.svg" class="feature__icon" alt="">
+                    </figure>
+                    <span class="feature__name">Friendly UI</span>
+                </div>
+                <div class="feature">
+                    <figure class="feature__icon--wrapper">
+                        <img src="./assets/calendar-days-solid.svg" class="feature__icon" alt="">
+                    </figure>
+                    <span class="feature__name">Historical data</span>
+                </div>
+                <div class="feature">
+                    <figure class="feature__icon--wrapper">
+                        <img src="./assets/sack-dollar-solid.svg" class="feature__icon" alt="">
+                    </figure>
+                    <span class="feature__name">Unrealized P/L</span>
                 </div>
             </div>
+        </div>
+       </div> 
     </section>
-    <section id="languages">
+    <section id="download">
         <div class="container">
             <div class="row">
-                <h1 class="section__title">Explore data from multiple <span class="text--purple">blockchains</span></h1>
-                <div class="language__list">
-                    <div class="language">
-                        <figure class="language__img--wrapper">
-                            <img src="https://loutre.blockchair.io/assets/svg/chains/bitcoin.svg" alt="btc Logo"
-                                class="language__img" />
-                        </figure>
-                        <span class="language__name">Bitcoin</span>
-                    </div>
-                    <div class="language">
-                        <figure class="language__img--wrapper">
-                            <img src="https://loutre.blockchair.io/assets/svg/chains/ethereum.svg" alt="eth Logo"
-                                class="language__img" />
-                        </figure>
-                        <span class="language__name">Ethereum</span>
-                    </div>
-                    <div class="language">
-                        <figure class="language__img--wrapper">
-                            <img src="https://loutre.blockchair.io/assets/svg/chains/litecoin.svg" alt="btc Logo"
-                                class="language__img" />
-                        </figure>
-                        <span class="language__name">Litecoin</span>
-                    </div>
-                    <div class="language">
-                        <figure class="language__img--wrapper">
-                            <img src="https://loutre.blockchair.io/assets/svg/chains/bitcoin-cash.svg" alt="bch Logo"
-                                class="language__img" />
-                        </figure>
-                        <span class="language__name">Bitcoin Cash</span>
-                    </div>
-                    <div class="language">
-                        <figure class="language__img--wrapper">
-                            <img src="https://loutre.blockchair.io/assets/svg/chains/monero.svg" alt="xmr Logo"
-                                class="language__img" />
-                        </figure>
-                        <span class="language__name">Monero</span>
-                    </div>
-                    <div class="language">
-                        <figure class="language__img--wrapper">
-                            <img src="https://loutre.blockchair.io/assets/svg/chains/stellar.svg" alt="xlm Logo"
-                                class="language__img" />
-                        </figure>
-                        <span class="language__name">Stellar</span>
-                    </div>
-                    <div class="language">
-                        <figure class="language__img--wrapper">
-                            <img src="https://loutre.blockchair.io/assets/svg/chains/cardano.svg" alt="ada Logo"
-                                class="language__img" />
-                        </figure>
-                        <span class="language__name">Cardano</span>
-                    </div>
-                    <div class="language">
-                        <figure class="language__img--wrapper">
-                            <img src="https://loutre.blockchair.io/assets/svg/chains/polkadot.svg" alt="dot Logo"
-                                class="language__img" />
-                        </figure>
-                        <span class="language__name">Polkadot</span>
-                    </div>
-                    <div class="language">
-                        <figure class="language__img--wrapper">
-                            <img src="https://loutre.blockchair.io/assets/svg/chains/dogecoin.svg" alt="doge Logo"
-                                class="language__img" />
-                        </figure>
-                        <span class="language__name">Doge</span>
-                    </div>
-                    <div class="language">
-                        <figure class="language__img--wrapper">
-                            <img src="https://loutre.blockchair.io/assets/svg/chains/ripple.svg" alt="xrp Logo"
-                                class="language__img" />
-                        </figure>
-                        <span class="language__name">Ripple</span>
-                    </div>
-                    <div class="language">
-                        <figure class="language__img--wrapper">
-                            <img src="https://loutre.blockchair.io/assets/svg/chains/solana.svg" alt="sol Logo"
-                                class="language__img" />
-                        </figure>
-                        <span class="language__name">Solana</span>
-                    </div>
-                    <div class="language">
-                        <figure class="language__img--wrapper">
-                            <img src="https://loutre.blockchair.io/assets/svg/chains/bitcoin-sv.svg" alt="bsv Logo"
-                                class="language__img" />
-                        </figure>
-                        <span class="language__name">Bitcoin SV</span>
-                    </div>
-                </div>
-            </div>
-    </section>
-    <section id="projects">
-        <div class="container">
-            <div class="row">
-                <h1 class="section__title">Export data <span class="text--purple">directly</span> to excel</h1>
+                <h1 class="section__title">Download open bitcoin to start working on <span class="text--purple">client files</span></h1>
                 <ul class="project__list">
                     <li class="project">
                         <div class="project__wrapper">
-                            <img src="./assets/verify_tx.png"
-                                class="project__img" alt="Transaction Verification">
+                            <img src="./assets/openbtc-ui.png" class="project__image" alt="Open BTC UI">
                             <div class="project__description">
-                                <h3 class="project__description--title">Verification of Transactions</h3>
+                                <h3 class="project__description--title">Open Bitcoin for Excel</h3>
                                 <h4 class="project__description--sub-title">
-                                    Ensure all transactions have settled on-chain
+                                    Latest Version 2.0.03 ✅
                                 </h4>
                                 <p class="project__description--para">
-                                    Match data record by focusing on the date, transaction hash, amount, token and destination address.
-                                    Determine the status of the transactions as verified on null after checking for confirmations. 
+                                    Developed and maintained by Norma Escobar.
                                 </p>
+                                <div class="project__description--links">
+                                    <a href="https://www.github.com/normaescobar/" class="project__description--link" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </li>
-                    <li class="project">
-                        <div class="project__wrapper">
-                            <img src="./assets/debit-credit.png"
-                                class="project__img" alt="Transaction Verification">
-                            <div class="project__description">
-                                <h3 class="project__description--title">Sent/Received Dashboard</h3>
-                                <h4 class="project__description--sub-title">
-                                    Compatible with bitcoin, ethereum, polygon, BSC, and avalanche
-                                </h4>
-                                <p class="project__description--para">
-                                    Organize data clumps in an accountant-friendly manner.
-                                    Label transactions as incoming or outgoing.
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="project">
-                        <div class="project__wrapper">
-                            <img src="./assets/daily-price.png"
-                                class="project__img" alt="Transaction Verification">
-                            <div class="project__description">
-                                <h3 class="project__description--title">Historical Price Data</h3>
-                                <h4 class="project__description--sub-title">
-                                    Available for bitcoin, ethereum and BSC
-                                </h4>
-                                <p class="project__description--para">
-                                    APIs fetch live data to get the closing price of every major cryptocurrency in any time frame.
-                                    Export daily prices with ease into excel.
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="project">
-                        <div class="project__wrapper">
-                            <img src="./assets/profit-loss.png"
-                                class="project__img" alt="Transaction Verification">
-                            <div class="project__description">
-                                <h3 class="project__description--title">Unrealized Gains or Losses</h3>
-                                <h4 class="project__description--sub-title">
-                                    Available for bitcoin, ethereum, and binance coin
-                                </h4>
-                                <p class="project__description--para">
-                                    Get a P/L estimate per transaction.
-                                    And inevitably, the closest estimate of the wallet address return on investment.
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="project">
-                        <div class="project__wrapper">
-                            <img src="./assets/rollback.png"
-                                class="project__img" alt="Transaction Verification">
-                            <div class="project__description">
-                                <h3 class="project__description--title">Transaction Rollback</h3>
-                                <h4 class="project__description--sub-title">
-                                    Get wallet balance at year-end
-                                </h4>
-                                <p class="project__description--para">
-                                    Determine the balance of any wallet address at year-end, or any date.
-                                    This eliminates the redundant task of manually adding and subtracting transaction values.
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="project">
-                        <div class="project__wrapper">
-                            <img src="./assets/revenue-model.png"
-                                class="project__img" alt="Transaction Verification">
-                            <div class="project__description">
-                                <h3 class="project__description--title">Revenue Testing Models</h3>
-                                <h4 class="project__description--sub-title">
-                                    Test revenue correctness
-                                </h4>
-                                <p class="project__description--para">
-                                    Create maximum output models for mining revenue dependent on network hash rate, hardware specs and block reward.
-                                </p>
-                            </div>
-                        </div>
-                    </li>
+                </ul>
+                <div class="button__div">
+                    <button type="button" onclick="alert('Please make sure to have your license key available before downloading program.')">Download</button>
+                </div>
             </div>
-        </div>
-        </div>
         </div>
     </section>
     <footer>
-        <div class="row footer__row">
+        <div class="footer__row row">
             <a href="#" class="footer__anchor">
-                <figure class="footer__logo">
-                    <img src="./assets/logo.png" class="footer__logo--img" alt="KRP Logo">
+                <figure class="footer__logo--wrapper">
+                    <img src="./assets/logo.png" class="footer__logo" alt="">
                 </figure>
                 <span class="footer__logo--popper">
                     Top
                     <i class="fas fa-arrow-up"></i>
                 </span>
             </a>
-            <div class="footer__social--list">
-                <a href="https://krpgroup.com" target="_blank" class="
-              footer__social--link
-              link__hover-effect
-              link__hover-effect--white
-            " target="_blank">Website</a>
-                <a href="mailto:nescobar@krpgroup.com" target="_blank" class="
-              footer__social--link
-              link__hover-effect
-              link__hover-effect--white
-            " target="_blank">Email</a>
-                <a href="./assets/KRP Digital Assets.pdf" target="_blank" class="
-              footer__social--link
-              link__hover-effect
-              link__hover-effect--white
-            " target="_blank">Download</a>
+            <div class="footer__list">
+                <a href="https://krpgroup.com" class="
+                footer__link
+                link__hover-effect
+                link__hover-effect--white
+                " target="_blank">Website</a>
+                <a href="mailto:nescobar@krpgroup.com" class="
+                footer__link
+                link__hover-effect
+                link__hover-effect--white
+                " target="_blank">Email</a>
+                <a href="./assets/KRP Digital Assets.pdf" class="
+                footer__link
+                link__hover-effect
+                link__hover-effect--white
+                " target="_blank">Documentation</a>
             </div>
             <div class="footer__copyright">Copyright © 2022</div>
         </div>
     </footer>
 </body>
-
 </html>
