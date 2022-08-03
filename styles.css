@@ -507,7 +507,6 @@ footer {
 
     button {
         font-size: 16px;
-        left: 0;
-        text-align: center;
+        margin: 0 auto;
     }
 }
