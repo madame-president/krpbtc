@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>KRP BTC Documentation</title>
-	<link rel="stylesheet" href="styles.css" />
+	<link rel="stylesheet" href="main.css" />
 	<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -16,7 +16,7 @@
 			</div>
 		</div>
 
-		<aside class="sidebar" /*style="position: sticky;"*/>
+		<aside class="sidebar">
 			<h3>KRP BTC</h3>
 			
 			<nav class="menu">
@@ -25,8 +25,9 @@
 				<a href="#documentation" class="menu-item">Documentation</a>
 				<a href="#formalization" class="menu-item">Formalization</a>
 				<a href="#openbitcoin" class="menu-item">Open Bitcoin for Excel</a>
-				<a href="#" class="menu-item">Packages</a>
-				<a href="#" class="menu-item">Code Base</a>
+				<a href="#packages" class="menu-item">Packages</a>
+				<a href="#code-base" class="menu-item">Code Base</a>
+				<a href="./assets/appendix.pdf" target="_blank" class="menu-item">Appendix</a>
 				<a href="mailto:nescobar@krpgroup.com" class="menu-item">Contact</a>
 			</nav>
 
@@ -127,6 +128,16 @@
 					</figure>
 				</div>
 				<p>New version updates:</p>
+				<div class="content-row">
+					<figure class="image--wrapper">
+						<img src="./assets/node-console.jpg" class="image" alt="">
+					</figure>
+				</div>
+				<div class="content-row">
+					<figure class="image--wrapper">
+						<img src="./assets/node-info.jpg" class="image" alt="">
+					</figure>
+				</div>
 				<ul>
 					<li>We are now running a full bitcoin node internally. This means, that KRP has an entire copy of the entire Bitcoin blockchain since Genesis block. The new transactions are automatically processed and up to date. As of right now, there are less than 350 discoverable nodes in Canada.</li>
 					<li>In order to query the entire blockchain efficiently, and retrieve transactions by custom search, we append Electrum Server to the node. This allows us to develop python scripts to query the entire blockchain and retrieve information as needed.</li>
@@ -288,6 +299,59 @@
 					<li>Get historical price data</li>
 					<li>Calculate unrealized gains or losses</li>
 					<li>Friendly user interface</li>
+				</ul>
+				<button>Download</button>
+			</section>
+			<section id="packages">
+				<h1>Packages</h1>
+				<div class="content-row">
+					<figure>
+						<img src="./assets/verifytx-pypi.png" alt="">
+					</figure>
+				</div>
+				<p>The Python Package Index (PyPI) is a repository of software for the Python programming language. PyPI helps you find and install software developed and shared by the Python community.
+					Internally, we use 3 main packages to power the core functionalities of Open Bitcoin for Excel and software in development:
+				</p>
+				<ul>
+					<a href="https://pypi.org/project/verifytx/" target="_blank"><li>verifytx</li></a>
+					<a href="https://pypi.org/project/debitcr/" target="_blank"><li>debitcr</li></a>
+					<a href="https://pypi.org/project/getbalance/" target="_blank"><li>getbalance</li></a>
+				</ul>
+				<h4>Installation</h4>
+				<p>In your command line interface, type <strong>pip install verifytx</strong>.</p>
+				<div class="content-row">
+					<figure>
+						<img src="./assets/install-pip.png" alt="">
+					</figure>
+				</div>
+				<p>Create a folder directory titled <strong>verifytx</strong>. Inside the folder, add to new folders titled <strong>input</strong> and <strong>output</strong>. At this stage, you can add your file to the input folder.</p>
+				<div class="content-row">
+					<figure>
+						<img src="./assets/install-directory.png" alt="">
+					</figure>
+				</div>
+				<p>Lastly, run the command <strong>verifytx.run()</strong> to start the program. Verifytx verifies each individual transaction in less than 0.5 seconds.</p>
+				<div class="content-row">
+					<figure>
+						<img src="./assets/install-run.png" alt="">
+					</figure>
+				</div>
+				<p><strong>Final product:</strong></p>
+				<div class="content-row">
+					<figure>
+						<img src="./assets/install-complete.png" alt="">
+					</figure>
+				</div>
+			</section>
+			<section id="code-base">
+				<h1>Code Base</h1>
+				<p>The best things in life are open-source. And so are we. To download or contribute to our work, click on the following repositories:</p>
+				<ul>
+					<a href=""><li>Repository: Open Bitcoin</li></a>
+					<a href=""><li>Repository: verifytx</li></a>
+					<a href=""><li>Repository: debitcr</li></a>
+					<a href=""><li>Repository: getbalance</li></a>
+					<a href=""><li>Front End: KRP BTC</li></a>
 				</ul>
 			</section>
 			<footer>
