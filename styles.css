@@ -68,6 +68,21 @@ html {
   transform: rotate(90deg);
 }
 
+nav {
+	position: sticky;
+	top: 0px;
+	scroll-behavior: smooth;
+}
+
+button {
+	background-color: #6030b1;
+	color: #FFF;
+	padding: 8px 16px;
+	border-radius: none;
+	margin-bottom: 1.5rem;
+	font-weight: 700;
+}
+
 .sidebar {
 	flex: 1 1 0;
 	max-width: 300px;
@@ -203,6 +218,11 @@ table {
 	font-style: italic;
 	padding-left: 25%;
 }
+
+#packages img {
+	margin-bottom: 1rem;
+}
+
 
 .footer-row {
 	display: flex;
