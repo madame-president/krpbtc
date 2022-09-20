@@ -4,9 +4,10 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>KRP BTC Documentation</title>
-	<link rel="stylesheet" href="styles.css" />
+	<title>Kingston Ross & Pasnak - Documentation</title>
+	<link rel="stylesheet" href="main.css" />
 	<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+	<link rel="icon" type="image/x-icon" href="assets/krp-logo-xs.png">
 </head>
 <body>
 	<div class="app">
@@ -35,8 +36,8 @@
 
 		<main class="content flex flex-1">
 			<h1>Digital Assets Internal Guide</h1>
-			<p>An organizational structure document. To coordinate large numbers of workloads more efficiently and avoid chaos. Detailed program development guide for continuity.
-				This guide contains information about department operations and structure, code base and documentation, span of control, and the introduction of internal software.
+			<p>An organizational structure document. Detailed program development guide for continuity.
+				This guide contains information about department operations and structure, code base and documentation, and span of control.
 			</p>
 			<div class="content-row">
 				<figure>
@@ -77,8 +78,7 @@
 				</ul>
 				<h4>Internal Node</h4>
 				<ul>
-					<li>Operate and monitor KRP’s full bitcoin node to minimize the reliance of trust on third parties.</li>
-					<li>Operate and monitor KRP’s Electrum Server, sitting on top of the bitcoin node, to query and index the blockchain.</li>
+					<li>Operate and monitor a full bitcoin node and Electrum Server to minimize the reliance of trust on third parties.</li>
 				</ul>
 				<h4>Hardware</h4>
 				<ul>
@@ -87,9 +87,13 @@
 				<h4>Software</h4>
 				<ul>
 					<li>Development of applications and programs for internal or external use.</li>
-					<li>Development of proprietary APIs that export data directly from our full node.</li>
-					<li>Product management and integration of front end, back end and deployment.</li>
+					<li>Purchasing of software licenses and applications, such as <strong>TrustExplorer.</strong></li>
 				</ul>
+				<div class="content-row">
+					<figure>
+						<img src="./assets/armanino-trustexplorer.png" alt="">
+					</figure>
+				</div>
 				<h4>Documentation of Code</h4>
 				<ul>
 					<li>Maintain and update code base.</li>
@@ -108,48 +112,13 @@
 				<h1>Documentation</h1>
 				<p>Ultimately, we can encapsulate all duties and responsibilities regarding digital assets under 3 major categories: software development, client files and assurance controls.</p>
 				<h4>Software Development</h4>
-				<div class="content-row">
-					<figure class="image--wrapper">
-						<img src="./assets/software-dev-old.png" class="image" alt="">
-					</figure>
-				</div>
-				<p>Note: this is the old version behind the scenes.</p>
 				<ul>
-					<li>Using third-party APIs from exchanges and block explorers, we are able to make calls that retrieve information details for wallet addresses, transactions and block confirmations. On the other end of those calls, is an internal python program that provides a graphical user interface to navigate the information retrieved more easily.</li>
-					<li>This measure was adopted as the quickest way to handle large volume clients, given the existing workload. After cleaning the pipeline, and essentially relieving the workload, we are now opting for an application that prioritizes security and customization, thus eliminating the third parties involved.</li>
-					<li>This grants KRP the flexibility of developing and customizing internal tools per our accountants' specifications. Additionally, our data is more reliable, since it is exported using APIs developed internally, communicating with our own full bitcoin node.</li>
-					<li>Given the hardware complications (storage capacity) associated with running an Ethereum node, for example, I, as Digital Assets Manager, have made the technical choice to continue to rely on third parties for this data, such as Infura or Etherscan. And given the lack of popularity or liquidity of other cryptocurrencies held by our clients, I also made the time-effective decision to rely on third parties as well.</li>
-					<li>Effective October 1st, 2022, I, Norma Escobar, will be developing software applications exclusively for the Bitcoin Network, and I trust the firm to agree with my decision.</li>
+					<li>Implementation of TrustExplorer across remote desktops.</li>
+					<li>Development of internal python scripts and libraries to query the bitcoin blockchain.</li>
+					<li>Maintain code base and documentation up to date.</li>
+					<li>Development of custom tools for accountants within the firm.</li>
 				</ul>
-				<p>This is what the future holds:</p>
-				<div class="content-row">
-					<figure class="image--wrapper">
-						<img src="./assets/openbtc-network.png" class="image" alt="">
-					</figure>
-				</div>
-				<p>New version updates:</p>
-				<div class="content-row">
-					<figure class="image--wrapper">
-						<img src="./assets/node-console.jpg" class="image" alt="">
-					</figure>
-				</div>
-				<div class="content-row">
-					<figure class="image--wrapper">
-						<img src="./assets/node-info.jpg" class="image" alt="">
-					</figure>
-				</div>
-				<ul>
-					<li>We are now running a full bitcoin node internally. This means, that KRP has an entire copy of the entire Bitcoin blockchain since Genesis block. The new transactions are automatically processed and up to date. As of right now, there are less than 350 discoverable nodes in Canada.</li>
-					<li>In order to query the entire blockchain efficiently, and retrieve transactions by custom search, we append Electrum Server to the node. This allows us to develop python scripts to query the entire blockchain and retrieve information as needed.</li>
-					<li>Everything from above is more than sufficient to establish perform a satisfactory audit. Regardless, there are more additions we can build internally to monetize the beautiful infrastructure we have built.</li>
-					<li>APIs are a great tool for auditing digital assets. There is a lot of robust APIs out there available for free. Other technology companies, opt for the option to sell API keys. This would grant other parties access to our full node and server. I believe in my heart, we as a firm, have the capabilities to become the industry standard for bitcoin APIs for public practice.</li>
-					<li>After the back end is complete, it's time to work on user interface:</li>
-				</ul>
-				<div class="content-row">
-					<figure class="image--wrapper">
-						<img src="./assets/openbtc-windows.png" class="image" alt="">
-					</figure>
-				</div>
+			
 				<h4>Client Files</h4>
 				<ul>
 					<li>Verification of transactions</li>
@@ -170,25 +139,26 @@
 			</section>
 			<section id="formalization">
 				<h1>Formalization</h1>
-				<p>The following contains a guide to organizing client data for verification of transactions on the blockchain, a list of the resources used during the verification process and an appendix. This guide should be considered the standard for on-chain work.</p>
+				<p>How to organize client data for verification of transactions on the blockchain, and a list of the resources used during the verification process. 
+					This guide should be considered the standard for on-chain work.</p>
 				<ul>
 					<li>Organizing client data</li>
 					<li>Block explorers</li>
 					<li>Mining</li>
-					<li>Common misunderstandings</li>
+					
 				</ul>
 				<h4>Organizing Client Data</h4>
 				<p>Most of the time our clients will give us a chunk of data in a CSV file. While the data looks intimidating, there are only a few columns that will grant us sufficient information to verify the transactions on the blockchain.</p>
 				<table>
 					<tr>
-						<th>Date</th>
 						<th>Transaction Hash</th>
+						<th>Server Time</th>
 						<th>Transaction Value</th>
 						<th>Asset</th>
 						<th>Destination Address</th>
 					</tr>
 				</table>
-				<p>After the 2.0. version update of openbtc for excel, we no longer rely solely on the data provided by our clients. We are able to extract those values from a single input: wallet address/es.</p>
+				
 				<p><strong>Moving forward, all I require from you is the list of address/es.</strong></p>
 				<h4>Block Explorers</h4>
 				<p>Each network has its own set of tools used for blockchain exploration. Since cryptocurrencies are open-source projects, most of the tools out there are free and used by accountants and developers all over the world.</p>
@@ -199,7 +169,7 @@
 					</tr>
 					<tr>
 						<td>Bitcoin</td>
-						<td>https://oxt.me/ &amp; https://mempool.space</td>
+						<td>https://oxt.me/ <br> https://mempool.space</td>
 					</tr>
 					<tr>
 						<td>Bitcoin, Ethereum, Bitcoin Cash</td>
@@ -271,14 +241,7 @@
 				<p><span>Client’s daily coins = total daily block reward * client’s hash rate share</span></p>
 				<p><strong>Mining algorithm</strong></p>
 				<p>The mining algorithm will determine the asset being mined. For example, if our client mines using NVIDIA GPUs, we automatically know they are not mining for Bitcoin. Maybe back in the early years, when Bitcoin mining wasn’t as competitive, however, now it would be virtually impossible to compete against ASIC miners.</p>
-				<h4>Common Misunderstandings</h4>
-				<ul>
-					<li>The name “cryptocurrencies” is very misleading because not all cryptos were created to act as currencies. As a matter of fact, most cryptocurrencies out there were created for other purposes unrelated to money payments and currency. Bitcoin’s whitepaper explicitly states that it was created under the idea of becoming a global payment network.</li>
-					<li>Ethereum, for example, was created to become a super-powerful decentralized computer that gives life to decentralized applications (also known as DApps). Ether is the currency needed to pay for computing power and the more people use the Ethereum Virtual Machine, the more demand there is for Ether, hence the growth in price</li>
-					<li>Understanding this is crucial in order to recognize wallet activity trends and behaviour patterns. For example, if our client holds a significant amount of ATOM and does not sell it, does this mean they haven’t profited? Absolutely not. ATOM, like many other coins, is a proof of stake. Meaning that by simply staking the coins, a client can generate anywhere between 5-20% yield</li>
-					<li>The yield is significantly higher for clients participating in liquidity farms, whose sole purpose is to generate profits by the tokens received as part of their reward for having a stake in the pool. At first, it can be intimidating to recognize patterns, but it does get easier the more you learn about the different cryptocurrency projects out there.</li>
-					<li>A good understanding of our client’s business model, and the crypto project they are invested in, will give you a great notion as to how exactly they make money. This is very helpful to determine how revenue can be tested. I wish there was a single strategy that could give us a conclusive revenue test, however, due to the nature of cryptocurrencies and the projects behind them, each client will most likely require a different auditing strategy</li>
-				</ul>
+				
 			</section>
 			<section id="openbitcoin">
 				<h1>Introduction to Open Bitcoin for Excel</h1>
@@ -287,10 +250,8 @@
 						<img src="./assets/openbtc-windows.png" alt="">
 					</figure>
 				</div>
-				<p>Formerly known as auditcoin.</p>
+				
 				<p>Open Bitcoin for Excel (“openbtc” for short) is an open-source Python program that provides detailed wallet information about prices, transactions, and blockchain confirmations more directly into excel. It was born from a lack of existing libraries.</p>
-				<p>Understand that there is a world of existing software products designed for cryptocurrency accounting. However, openbtc is the only program created specifically for our needs. That is, handling volumes of 1,000,000 plus transactions, sent/received view mode, individual verification of each transaction, and historical data that seamlessly integrate with excel.</p>
-				<p>The development of the program started in February 2022, and it continues to be updated and maintained by Norma Escobar.</p>
 				<h4>Project Description</h4>
 				<ul>
 					<li>No third-parties</li>
@@ -298,44 +259,21 @@
 					<li>Verify transactions</li>
 					<li>Get historical price data</li>
 					<li>Calculate unrealized gains or losses</li>
-					<li>Friendly user interface</li>
+					<li>Custom GUI</li>
 				</ul>
-				<button>Download</button>
+				<button><a href="">INSTALL</a></button>
 			</section>
 			<section id="packages">
 				<h1>Packages</h1>
-				<div class="content-row">
-					<figure>
-						<img src="./assets/verifytx-pypi.png" alt="">
-					</figure>
-				</div>
-				<p>The Python Package Index (PyPI) is a repository of software for the Python programming language. PyPI helps you find and install software developed and shared by the Python community.
-					Internally, we use 3 main packages to power the core functionalities of Open Bitcoin for Excel and software in development:
+				
+				<p>The Python Package Index (PyPI) is a repository of software for the Python programming language. PyPI helps you find and install software developed and shared by the Python community. Internally, we developed 3 main packages to power the back-end of any software:
 				</p>
 				<ul>
 					<a href="https://pypi.org/project/verifytx/" target="_blank"><li>verifytx</li></a>
 					<a href="https://pypi.org/project/debitcr/" target="_blank"><li>debitcr</li></a>
 					<a href="https://pypi.org/project/getbalance/" target="_blank"><li>getbalance</li></a>
 				</ul>
-				<h4>Installation</h4>
-				<p>In your command line interface, type <strong>pip install verifytx</strong>.</p>
-				<div class="content-row">
-					<figure>
-						<img src="./assets/install-pip.png" alt="">
-					</figure>
-				</div>
-				<p>Create a folder directory titled <strong>verifytx</strong>. Inside the folder, add to new folders titled <strong>input</strong> and <strong>output</strong>. At this stage, you can add your file to the input folder.</p>
-				<div class="content-row">
-					<figure>
-						<img src="./assets/install-directory.png" alt="">
-					</figure>
-				</div>
-				<p>Lastly, run the command <strong>verifytx.run()</strong> to start the program. Verifytx verifies each individual transaction in less than 0.5 seconds.</p>
-				<div class="content-row">
-					<figure>
-						<img src="./assets/install-run.png" alt="">
-					</figure>
-				</div>
+	
 				<p><strong>Final product:</strong></p>
 				<div class="content-row">
 					<figure>
@@ -345,13 +283,13 @@
 			</section>
 			<section id="code-base">
 				<h1>Code Base</h1>
-				<p>The best things in life are open-source. And so are we. To download or contribute to our work, click on the following repositories:</p>
+				<p>The best things in life are open-source. To download or contribute to our work, click on the following repositories:</p>
 				<ul>
-					<a href=""><li>Repository: Open Bitcoin</li></a>
-					<a href=""><li>Repository: verifytx</li></a>
-					<a href=""><li>Repository: debitcr</li></a>
-					<a href=""><li>Repository: getbalance</li></a>
-					<a href=""><li>Front End: KRP BTC</li></a>
+					<a href="https://github.com/normaescobar/open-bitcoin-codebase/blob/main/backend"><li>Repository: Open Bitcoin</li></a>
+					<a href="https://github.com/normaescobar/auditcoin"><li>Repository: verifytx</li></a>
+					<a href="https://github.com/normaescobar/debitcr"><li>Repository: debitcr</li></a>
+					<a href="https://github.com/normaescobar/getbalance/blob/main/code"><li>Repository: getbalance</li></a>
+					<a href="https://github.com/normaescobar/krpbtc"><li>Front End: KRP BTC</li></a>
 				</ul>
 			</section>
 			<footer>
