@@ -152,13 +152,17 @@ button {
 	flex: 1 1 0;
 	padding: 2rem;
 	width: 100%;
-	max-width: 1150px;
+	max-width: 100%;
+}
+
+hr {
+	margin: 0.75rem 0 1rem 0;
 }
 
 .content h1 {
 	color: #242424;
 	font-size: 2.5rem;
-	margin-bottom: 1.5rem;
+	/*margin-bottom: 1.5rem;*/
 }
 
 .content h4 {
