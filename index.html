@@ -26,7 +26,7 @@
 				<a href="#documentation" class="menu-item">Documentation</a>
 				<a href="#formalization" class="menu-item">Formalization</a>
 				<a href="#openbitcoin" class="menu-item">Open Bitcoin for Excel</a>
-				<a href="#packages" class="menu-item">Packages</a>
+				<a href="#terminalwallet" class="menu-item">terminalWallet</a>
 				<a href="#code-base" class="menu-item">Code Base</a>
 				<a href="./assets/appendix.pdf" target="_blank" class="menu-item">Appendix</a>
 				<a href="mailto:nescobar@krpgroup.com" class="menu-item">Contact</a>
@@ -35,22 +35,33 @@
 		</aside>
 
 		<main class="content flex flex-1">
-			<h1>Digital Assets Internal Guide</h1>
-			<p>An organizational structure document. Detailed program development guide for continuity.
-				This guide contains information about department operations and structure, code base and documentation, and span of control.
+			<h1>Introduction</h1>
+			<hr>
+			<p>
+				<strong>KRP BTC</strong> is a framework for verifying cryptocurrency transactions. It provides a guide for financial
+				professionals that ensures:
+			<ul>
+				<li>Best audit practices set by Canadian regulators.</li>
+				<li>Efficient ways of verifying cryptocurrency transactions on-chain.</li>
+			</ul>
 			</p>
-			<div class="content-row">
-				<figure>
-					<img src="./assets/svg-spreadsheet.svg" alt="">
-				</figure>
-			</div>
+			<p>
+				The main value props of KRP BTC are:
+			<ul>
+				<li><strong>Internal Libraries: </strong> most cryptocurrency transactions settle on open, permissionless blockchains that allow us to
+				develop scripts that extract raw data.</li>
+				<li><strong>Data Classification: </strong> the raw data extracted is then organized in an accountant-friendly manner integrated with
+				Excel.</li>
+			</ul>
+			</p>
             <section id="work-specialization">
-                <h1>Work Specialization</h1>
-                <p>The Department of Digital Assets provides the technical controls and advisory to successfully meet the industry standards and regulations for the auditing and accounting of digital assets.</p>
+				<h1>Work Specialization</h1>
+				<hr>
+				<p>Here are the technical controls set in place to meet the industry standards and regulations for the auditing of cryptocurrencies.</p>
 				<h4>Verification of transactions</h4>
 				<ul>
 					<li>Ensure all transactions have been settled on the blockchain.</li>
-					<li>Match data record provided by client focusing on the date, transaction hash, amount, asset type and destination address.</li>
+					<li>Match data provided by client, with a focus on date of transaction, transaction hash, amount transacted, asset type and destination address.</li>
 					<li>Determine the status of the transaction as verified or invalid.</li>
 				</ul>
 				<h4>Transaction dashboard</h4>
@@ -60,7 +71,7 @@
 				</ul>
 				<h4>Daily price and historical data</h4>
 				<ul>
-					<li>Get the closing price of major assets in any time frame.</li>
+					<li>Get the closing price of major assets at any time frame.</li>
 				</ul>
 				<h4>Transaction rollback</h4>
 				<ul>
@@ -76,24 +87,19 @@
 					<li>Test revenue correctness by creating scripted calculators.</li>
 					<li>Test mining revenue by creating mining output models dependant on network hash rate, hardware and block rewards.</li>
 				</ul>
-				<h4>Internal Node</h4>
+				<h4>Internal Bitcoin Node and Blockchair Infrastructure</h4>
 				<ul>
-					<li>Operate and monitor a full bitcoin node and Electrum Server to minimize the reliance of trust on third parties.</li>
+					<li>Operate and monitor a full bitcoin node to minimize the reliance of trust on third parties.</li>
+					<li>For every other network, we rely on Blockchair's infrastructure and purchase a monthly API key that grants us 5, 000 requests daily.</li>
 				</ul>
 				<h4>Hardware</h4>
 				<ul>
-					<li>Purchasing and maintaining hardware, hardware specifications and general infrastructure architecture.</li>
+					<li>Maintaining the server and sufficient memory space that allows us to internally run a full bitcoin node, that remains always online.</li>
 				</ul>
 				<h4>Software</h4>
 				<ul>
 					<li>Development of applications and programs for internal or external use.</li>
-					<li>Purchasing of software licenses and applications, such as <strong>TrustExplorer.</strong></li>
 				</ul>
-				<div class="content-row">
-					<figure>
-						<img src="./assets/armanino-trustexplorer.png" alt="">
-					</figure>
-				</div>
 				<h4>Documentation of Code</h4>
 				<ul>
 					<li>Maintain and update code base.</li>
@@ -107,14 +113,15 @@
 				<ul>
 					<li>In-depth analysis of project whitepapers to mitigate risk.</li>
 				</ul>
-            </section>
+			</section>
+			
 			<section id="documentation">
 				<h1>Documentation</h1>
-				<p>Ultimately, we can encapsulate all duties and responsibilities regarding digital assets under 3 major categories: software development, client files and assurance controls.</p>
+				<hr>
+				<p>All duties and responsibilities fall under 3 major categories: software development, client files and assurance controls.</p>
 				<h4>Software Development</h4>
 				<ul>
-					<li>Implementation of TrustExplorer across remote desktops.</li>
-					<li>Development of internal python scripts and libraries to query the bitcoin blockchain.</li>
+					<li>Development of internal python scripts and libraries to query the bitcoin blockchain and/or make requests to Blockchair using our API key.</li>
 					<li>Maintain code base and documentation up to date.</li>
 					<li>Development of custom tools for accountants within the firm.</li>
 				</ul>
@@ -122,33 +129,33 @@
 				<h4>Client Files</h4>
 				<ul>
 					<li>Verification of transactions</li>
-					<li>Transaction dashboard</li>
+					<li>Organization of raw data in Excel</li>
 					<li>Daily prices and historical data</li>
 					<li>Transaction rollback</li>
-					<li>Unrealized gains or losses</li>
+					<li>Calculate estimated unrealized gains or losses</li>
 					<li>Revenue or testing models</li>
 				</ul>
 				<h4>Assurance Controls</h4>
 				<ul>
-					<li>Act as the first point of contact for any technical questions related to the digital assets industry</li>
-					<li>Act as the second layer of confirmation for: wallet balances, proof of funds, verification of funds, tokens labelled as scams, APY.</li>
-					<li>Perform routine controls on our code base to add or remove feature YOU desire.</li>
+					<li>Act as the first point of contact for any technical questions related to the cryptocurrency industry.</li>
+					<li>Act as the second layer of confirmation for: wallet balances, proof of reserves, verification of funds, tokens labelled as scams, APY.</li>
+					<li>Perform routine controls on our code base to add or remove features requested by accountants.</li>
 					<li>Ensure that all programs developed internally are up to the industry standard and expectations.</li>
-					<li>Whitepapers analysis.</li>
+					<li>Whitepaper analysis</li>
 				</ul>
 			</section>
 			<section id="formalization">
 				<h1>Formalization</h1>
-				<p>How to organize client data for verification of transactions on the blockchain, and a list of the resources used during the verification process. 
-					This guide should be considered the standard for on-chain work.</p>
+				<hr>
+				<p>This section provides instructions for organizing client data for blockchain transaction verification and a list of resources used in the process should be considered the standard for on-chain work.</p>
 				<ul>
-					<li>Organizing client data</li>
-					<li>Block explorers</li>
-					<li>Mining</li>
+					<li>Preparing client data for on-chain verification</li>
+					<li>Reliable resources by AICPA</li>
+					<li>Mining operations and activities</li>
 					
 				</ul>
-				<h4>Organizing Client Data</h4>
-				<p>Most of the time our clients will give us a chunk of data in a CSV file. While the data looks intimidating, there are only a few columns that will grant us sufficient information to verify the transactions on the blockchain.</p>
+				<h4>How to Prepare Client Files</h4>
+				<p>The client will provide us with a .csv file containing the raw data from their wallet addresses. To verify the transactions on the blockchain, we can focus on the following data points:</p>
 				<table>
 					<tr>
 						<th>Transaction Hash</th>
@@ -159,9 +166,9 @@
 					</tr>
 				</table>
 				
-				<p><strong>Moving forward, all I require from you is the list of address/es.</strong></p>
-				<h4>Block Explorers</h4>
-				<p>Each network has its own set of tools used for blockchain exploration. Since cryptocurrencies are open-source projects, most of the tools out there are free and used by accountants and developers all over the world.</p>
+				<p><strong>We can also request the client's addresses and retrieve these data internally.</strong></p>
+				<h4>Reliable Block Explorers by AICPA</h4>
+				<p>Each network has its own set of tools used for blockchain exploration. Cryptocurrencies are open-source projects, and most of the tools out there are free and used by accountants and developers all over the world.</p>
 				<table>
 					<tr>
 						<th>Asset/s or Network</th>
@@ -216,8 +223,8 @@
 						<td>https://explorer.avax.network/</td>
 					</tr>
 				</table>
-				<p>It is preferred to use the native block explorers for each asset. Sometimes the same address can be used for different networks, and using the native block explorer reduces that risk.</p>
-				<h4>Mining</h4>
+				<strong><p>The same address can be used on different networks.</p></strong>
+				<h4>Mining Operations and Activities</h4>
 				<p>The strategy to test revenue is almost identical for all proof-of-work networks. There are three components that will determine the profitability of operations:</p>
 				<ul>
 					<li>Hardware capacity</li>
@@ -245,51 +252,34 @@
 			</section>
 			<section id="openbitcoin">
 				<h1>Introduction to Open Bitcoin for Excel</h1>
-				<div class="content-row">
-					<figure>
-						<img src="./assets/openbtc-windows.png" alt="">
-					</figure>
-				</div>
-				
-				<p>Open Bitcoin for Excel (“openbtc” for short) is an open-source Python program that provides detailed wallet information about prices, transactions, and blockchain confirmations more directly into excel. It was born from a lack of existing libraries.</p>
-				<h4>Project Description</h4>
+				<hr>
+				<p>Open Bitcoin for Excel (“openbtc” for short) is an open-source web application that provides detailed wallet information about prices, transactions, and blockchain confirmations more directly into Excel. It was born from a lack of existing libraries.</p>
+				<h4>Project Description and Capabilities</h4>
 				<ul>
-					<li>No third-parties</li>
-					<li>Open-source</li>
-					<li>Verify transactions</li>
-					<li>Get historical price data</li>
-					<li>Calculate unrealized gains or losses</li>
-					<li>Custom GUI</li>
+					<li>Address checker: verify if an address is real and settles on-chain.</li>
+					<li>Transaction verification: upload an .xlsx file with bitcoin transactions and receive an output file with their respective block explorer URL.</li>
+					<li>Transaction hash search: enter a transaction hash and receive a block explorer URL if the hash is found on-chain.</li>
+					<li>Retrieve historical transactions: enter a bitcoin address and select the custom date range for transaction search.</li>
+					<li>Calculate estimated unrealized gains or losses</li>
+					<li>Historical price data: retrieve the closing price of bitcoin at a custom date range from major exchanges.</li>
 				</ul>
-				<button><a href="">INSTALL</a></button>
+				<button><a href="https://openbtc.org">CLICK HERE</a></button>
 			</section>
-			<section id="packages">
-				<h1>Packages</h1>
-				
-				<p>The Python Package Index (PyPI) is a repository of software for the Python programming language. PyPI helps you find and install software developed and shared by the Python community. Internally, we developed 3 main packages to power the back-end of any software:
+			<section id="terminalwallet">
+				<h1>Introduction to terminalWallet</h1>
+				<hr>
+				<p>terminalWallet is a command-based python program that retrieves historical wallet information for addresses found in major networks such as Bitcoin, Ethereum, Avalanche, Polygon, and Binance Smart Chain. The program retrieves the data from Blockchair and Block Daemon.
 				</p>
-				<ul>
-					<a href="https://pypi.org/project/verifytx/" target="_blank"><li>verifytx</li></a>
-					<a href="https://pypi.org/project/debitcr/" target="_blank"><li>debitcr</li></a>
-					<a href="https://pypi.org/project/getbalance/" target="_blank"><li>getbalance</li></a>
-				</ul>
-	
-				<p><strong>Final product:</strong></p>
-				<div class="content-row">
-					<figure>
-						<img src="./assets/install-complete.png" alt="">
-					</figure>
-				</div>
+				<p><strong>Video tutorial coming soon.</strong></p>
 			</section>
 			<section id="code-base">
 				<h1>Code Base</h1>
-				<p>The best things in life are open-source. To download or contribute to our work, click on the following repositories:</p>
+				<hr>
+				<p>To download or contribute, click on the following repositories:</p>
 				<ul>
-					<a href="https://github.com/normaescobar/open-bitcoin-codebase/blob/main/backend"><li>Repository: Open Bitcoin</li></a>
-					<a href="https://github.com/normaescobar/auditcoin"><li>Repository: verifytx</li></a>
-					<a href="https://github.com/normaescobar/debitcr"><li>Repository: debitcr</li></a>
-					<a href="https://github.com/normaescobar/getbalance/blob/main/code"><li>Repository: getbalance</li></a>
-					<a href="https://github.com/normaescobar/krpbtc"><li>Front End: KRP BTC</li></a>
+					<a href="https://github.com/normaescobar/openBitcoin"><li>Repository: Open Bitcoin</li></a>
+					<a href="https://github.com/normaescobar/excelWallet"><li>Repository: terminalWallet</li></a>
+					<a href="https://github.com/normaescobar/krpbtc"><li>Repository: KRP BTC</li></a>
 				</ul>
 			</section>
 			<footer>
@@ -299,7 +289,7 @@
 							<img src="./assets/logo.png" alt="">
 						</figure>
 					</a>
-					<div class="footer-copyright">Copyright © 2022 Kingston Ross & Pasnak LLP</div>
+					<div class="footer-copyright">Copyright © 2023 Kingston Ross & Pasnak LLP</div>
 				</div>
 			</footer>
 		</main>
