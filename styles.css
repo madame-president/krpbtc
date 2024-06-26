@@ -67,7 +67,6 @@ header.home-header::before {
     max-width: 100%;
 }
 
-/* Media query for screens with a maximum width of 720px */
 @media screen and (max-width: 480px) {
     header.home-header {
         background-image: url('assets/krp-bg.jpg');
@@ -176,4 +175,73 @@ footer p {
     font-size: 14px;
 }
 
+/* About */
+
+.profiles {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: #f9f9f9;
+    flex-wrap: wrap;
+}
+
+.profile-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.profile-card img {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.bio h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.bio p {
+    color: #777;
+    font-size: 16px;
+}
+
+@media (max-width: 720px) {
+    .profiles {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .profiles {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+    .profile-card {
+        width: 85%; /* Make profile cards fit the screen width */
+        margin: 20px auto; /* Center profile cards */
+    }
+
+    .profile-card img {
+        height: 100px; /* Adjust image size for smaller screens */
+        width: 100px;
+    }
+
+    .bio h3 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+
+    .bio p {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}
 
